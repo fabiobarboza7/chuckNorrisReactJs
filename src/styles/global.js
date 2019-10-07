@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
   * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ export default createGlobalStyle`
   }
 
   body {
+    font-family: 'Roboto Slab', serif;
     background: grey;
     -webkit-font-smoothing: antialiased !important;
   }

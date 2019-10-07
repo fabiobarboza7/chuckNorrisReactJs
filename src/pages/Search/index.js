@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import api from '../../services/api';
 
-import { Container, List } from './styles';
+import { Container, List, Text } from './styles';
 
 export default function Search() {
   const [datas, setDatas] = useState([]);
@@ -40,7 +40,13 @@ export default function Search() {
       </Container>
       <Container hidden={isHidden}>
         <List>
-          {datas.map(data => data.map(d => <li key={d.id}>{d.value}</li>))}
+          {datas.map(data =>
+            data.map(d => (
+              <li key={d.id}>
+                <img src={d.icon_url} alt={d.value} /> <Text>{d.value}</Text>
+              </li>
+            ))
+          )}
         </List>
       </Container>
     </>

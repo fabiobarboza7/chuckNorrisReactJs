@@ -12,9 +12,9 @@ export const Image = styled.img`
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-image: url('https://images-na.ssl-images-amazon.com/images/I/51IY4ohvfUL.jpg');
-  /* background-position: center center;
-  background-repeat: no-repeat; */
+  background-image: url('https://images02.military.com/sites/default/files/styles/full/public/media/veteran-jobs/content-images/2016/03/chucknorris.jpg?itok=_J3M4O-S');
+  background-size: cover;
+  background-position: center;
 `;
 
 export const Name = styled.h1`

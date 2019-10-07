@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <Container>
       <Image />
-      <Name>Stuff</Name>
+      <Name>Chuck Norris Jokes</Name>
     </Container>
   );
 }

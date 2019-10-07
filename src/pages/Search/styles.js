@@ -11,12 +11,21 @@ export const List = styled.ul`
   padding: 10px 40px;
 
   li {
-    margin: 3px 0;
+    margin: 4px 0;
     background-color: #fff;
-    text-align: center;
+    text-align: justify;
     width: 100%;
     list-style-type: none;
     padding: 5px 10px;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      padding-left: 10px;
+    }
   }
 `;
+
+export const Text = styled.p``;
