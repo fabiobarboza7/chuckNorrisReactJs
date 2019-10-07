@@ -19,4 +19,5 @@ export const Image = styled.img`
 
 export const Name = styled.h1`
   font-family: monospace;
+  color: #fff;
 `;

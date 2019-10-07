@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 import api from '../../services/api';
 
 import { List } from './styles';
@@ -8,10 +9,19 @@ export default function Search() {
   const [query, setQuery] = useState('');
 
   async function queryJokes() {
-    const response = await api.get(`/search?query=${query}`);
-    const { data } = response;
+    try {
+      const response = await api.get(`/search?query=${query}`);
+      const { data } = response;
+      if (!data.result.length) {
+        toast.error('Wow, some errros, take a look!');
+      } else {
+        toast.success(`Well done, we found ${data.result.length} records`);
+      }
 
-    setDatas([...datas, data.result]);
+      setDatas([data.result]);
+    } catch (err) {
+      toast.error('Wow, some errros, take a look!');
+    }
   }
 
   return (

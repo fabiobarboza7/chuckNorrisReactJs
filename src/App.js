@@ -1,4 +1,5 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
 import Home from './pages/Home';
 import GlobalStyle from './styles/global';
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Home />
       <GlobalStyle />
+      <ToastContainer autoClose={4000} />
     </>
   );
 }

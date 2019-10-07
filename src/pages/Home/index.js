@@ -7,8 +7,8 @@ import { Container } from './styles';
 export default function Home() {
   return (
     <>
+      <Header />
       <Container>
-        <Header />
         <Search />
       </Container>
     </>
