@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Container>
+      <Container backgroundColor="#fff">
         <Search />
       </Container>
     </>
